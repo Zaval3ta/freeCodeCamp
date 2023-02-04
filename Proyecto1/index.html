@@ -9,28 +9,41 @@
 <body>
   <div>
     <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p>Thank you for taking the time to help us improve the platform </p>
+    <p id="description">Thank you for taking the time to help us improve the platform </p>
   </div>
   <div class="container">
     <form id="survey-form">
       <fieldset>
-        <label for="name">Name <input id="name-label" type="text" name="name-label" required placeholder="Enter your name"/></label>
-        <label for="correo">Email <input id="email-label" type="email" name="email-label" required placeholder="Enter your Email"/></label>
-        <label for="age"> Age (optional) <input id="number-label" type="number" name="number-label" min="10" max="100" placeholder="Age" /> </label>
+        <div class="espacio">
+          <label id="name-label" for="name">Name <input id="name" type="text" name="name" required placeholder="Enter your name"/></label>
+        </div>
+        <div class="espacio">
+          <label id="email-label" for="correo">Email <input id="email" type="email" name="email" required placeholder="Enter your Email"/></label>
+        </div>
+        <div class="espacio">
+          <label id="number-label" for="age"> Age (optional) <input id="number" type="number" name="number" min="10" max="100" placeholder="Age" /> </label>
+        </div>
       </fieldset>
       <fieldset>
-        <label>Which option best describes your current role?</label>
-        <select id="dropdown" > 
-          <option value=" " > Select an option </option>
-          <option value="1" > Challenges </option>
-          <option value="2" > Projects </option>
-        </select>
-        <label>Would you recommend freeCodeCamp to a friend?</label>
-        <label><input type="radio" name="boton" class="inline" /> Definitely</label>
-        <label><input type="radio" name="boton" class="inline" /> Maybe</label>
-        <label><input type="radio" name="boton" class="inline" /> Not sure</label>
-        <label>Any comments or suggestions?
-          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+        <div class="espacio">
+          <label>Which option best describes your current role?</label>
+        </div>
+        <div class="espacio">
+          <select id="dropdown" > 
+            <option value=" " > Select an option </option>
+            <option value="1" > Challenges </option>
+            <option value="2" > Projects </option>
+          </select>
+        </div>
+        <div class="espacio">
+          <label>Would you recommend freeCodeCamp to a friend?</label>
+          <label><input type="checkbox" name="checkbox" class="inline" value="check" /> Definitely</label>
+          <label><input type="checkbox" name="checkbox" class="inline" value="check" /> Maybe</label>
+          <label><input type="radio" name="boton" class="inline" value="boton" /> Not sure</label>
+          <label><input type="radio" name="boton" class="inline" value="boton" /> xd</label>
+          <label>Any comments or suggestions?
+            <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+          </div>
         </label>
       </fieldset>
       <input id="submit" type="submit" value="Submit" />
